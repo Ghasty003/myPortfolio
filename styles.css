@@ -967,6 +967,7 @@ nav ul li span{
     nav ul{
         position: fixed;
         bottom: 0;
+        left: 0;
         z-index: 30;
         background: black;
         width: 100%;
