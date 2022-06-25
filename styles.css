@@ -1,0 +1,1064 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ 
+body{
+    background: rgba(0, 0, 0, 0.9);
+    font-family: 'Truculenta';
+}
+
+/* Preloader Section */
+
+.preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100px;
+    width: 200vw;
+    height: 1000vh;
+    background: black;
+    z-index: 10000;
+}
+
+.truck{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 200px;
+    top: 220px;
+    animation: truck 13s 1 ease-in-out;
+}
+
+@keyframes truck {
+    0%{
+        left: -200px;
+    }
+
+    10%{
+        left:200px;
+    }
+
+    95%{
+        left: 200px;
+    }
+
+    100%{
+        left: 2000px;
+    }
+}
+
+.container{
+    width: 400px;
+    height: 200px;
+    background: grey;
+    position: absolute;
+    top: 0;
+}
+
+.containerBar1{
+    position: absolute;
+    width: 8px;
+    left: 40px;
+    height: 100%;
+    background: lightblue;
+    box-shadow: 1px 0px 2px lightblue,  -2px 0px 2px black;
+}
+
+.containerBar2{
+    position: absolute;
+    width: 8px;
+    left: 90px;
+    height: 100%;
+    background: lightblue;
+    box-shadow: 1px 0px 2px lightblue,  -2px 0px 2px black;
+}
+
+.containerBar4{
+    position: absolute;
+    width: 8px;
+    left: 150px;
+    height: 100%;
+    background: lightblue;
+    box-shadow: 1px 0px 2px lightblue,  -2px 0px 2px black;
+}
+
+.containerBar5{
+    position: absolute;
+    width: 8px;
+    left: 200px;
+    height: 100%;
+    background: lightblue;
+    box-shadow: 1px 0px 2px lightblue,  -2px 0px 2px black;
+}
+
+.containerBar6{
+    position: absolute;
+    width: 8px;
+    left: 250px;
+    height: 100%;
+    background: lightblue;
+    box-shadow: 1px 0px 2px lightblue,  -2px 0px 2px black;
+}
+
+.containerBar7{
+    position: absolute;
+    width: 8px;
+    left: 320px;
+    height: 100%;
+    background: lightblue;
+    box-shadow: 1px 0px 2px lightblue,  -2px 0px 2px black;
+}
+
+.base{
+    width: 500px;
+    height: 50px;
+    background: #121212;
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+}
+
+.tireg{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 10px;
+    top: 5px;
+    background: black;
+    border-radius: 50%;
+    clip-path: polygon(50% 0, 100% 0, 100% 54%, 0 54%, 0 0);
+}
+
+.tire{
+    width: 75px;
+    height: 75px;
+    background: rgba(59, 59, 60, 1);
+    border-radius: 50%;
+    left: 20px;
+    top: 15px;
+    position: absolute;
+    box-shadow: inset 0px -4px 1px #2e2e2e, inset -4px 0px 1px #2e2e2e;
+    animation: rotation 0.2s 5;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(100deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.tireF::before{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    content: '';
+    border-radius: 50%;
+    left: 20%;
+    top: 20%;
+    background: white;
+}
+
+.tireContainer1{
+    position: absolute;
+    left: 85px;
+
+}
+
+.tireContainer2{
+    position: absolute;
+    left: 345px;
+}
+
+.front{
+    width: 150px;
+    height: 245px;
+    right: 40px;
+    position: absolute;
+    background: #323232;
+    z-index: -1;
+    border-top-left-radius: 20px;
+    top: 0;
+    clip-path: polygon(73% 0, 100% 60%, 100% 100%, 0 100%, 0 60%, 0 0);
+}
+
+.frontg{
+    width: 140px;
+    height: 250px;
+    position: absolute;
+    background: rgb(187, 1, 1);
+    left: 14px;
+    top: 10px;
+    border-left: 8px solid rgb(187, 3, 3);
+    border-radius: 25px;
+}
+
+.slideclass{
+    position: absolute;
+    width: 72px;
+    height: 80px;
+    top: 20px;
+    background: #122221;
+    clip-path: polygon(0 0, 71% 0, 100% 100%, 0 100%);
+}
+
+.glass{
+    width: 80%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    background: white;
+    position: absolute;
+    clip-path: polygon(0 0, 71% 0, 100% 100%, 0 100%);
+}
+
+.mainClass{
+    position: absolute;
+    width: 64px;
+    height: 80px;
+    top: 20px;
+    left: 70px;
+    background: #122221;
+    clip-path: polygon(0% 1%, 96% 0, 95% 100%, 39% 100%);
+}
+
+.glass1{
+    position: absolute;
+    width: 72%;
+    height: 80%;
+    left: 15%;
+    top: 10%;
+    background: white;
+    clip-path: polygon(0% 1%, 96% 0, 95% 100%, 39% 100%);
+}
+
+.indicator{
+    position: absolute;
+    width: 20px;
+    height: 45px;
+    border: 4px solid #121212;
+    top: 115px;
+    right: 11px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 14px;
+    background: rgb(255, 161, 10);
+    background: radial-gradient(circle, rgba(255, 235, 82, 1) 0%, rgba(255, 161, 14, 1) 100%);
+    animation-name: indicator;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes indicator {
+    0%{
+        background: rgb(255, 161, 10);;
+    }
+
+    50%{
+        background: rgb(244, 24, 24);
+    }
+
+    100%{
+        background: rgb(17, 232, 17);
+    }
+}
+
+.roller{
+    position: absolute;
+    width: 250px;
+    height: 15px;
+    background: white;
+    left: 0px;
+    top: 170px;
+    transform: rotate(-7deg);
+    z-index: -3;
+    animation: roll 8s ease-in-out 1s;
+}
+
+@keyframes roll {
+    0%{
+        left: 0px;
+        top: 170px;
+    }
+
+    17.5%{
+        left: -250px;
+        top: 200px;
+    }
+
+    95%{
+        left: -250px;
+        top: 200px;
+    }
+
+    100%{
+        left: 0px;
+        top: 170px;
+        
+    }
+}
+
+.scene{
+    width: 54px;
+    height: 54px;
+    border: 1px solid white;
+    position: absolute;
+    left: -1px;
+    top: 350px;
+    perspective: 100px;
+    z-index: -1;
+    opacity: 0;
+    animation-name: navigate;
+    animation-duration: 2s;
+    animation-delay: calc(1s * var(--scene));
+}
+
+@keyframes navigate {
+    0%{
+        left: calc(0px * var(--scene));
+        top: 44px;
+    }
+
+    49.9%{
+        left: 120px;
+        top: 350px;
+        transform: rotate(345deg);
+    }
+
+    50%{
+        left: 120px;
+        top: 350px;
+        transform: rotate(345deg);
+    }
+
+    90%{
+        left: 120px;
+        top: 350px;
+        opacity: 1;
+    }
+
+    100%{
+        left: 520px;
+        top: 390px;
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+
+}
+
+.cube-face{
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border: 2px solid #d39757;
+    line-height: 14px;
+    font-size: 40px;
+    background: rgb(219, 176, 124);
+    background: linear-gradient(90deg, rgba(219, 176, 124, 1)) 0%,rgba(219, 202, 124, 1) 30%, rgb(219, 176, 124) 100%;
+}
+
+.cube_face_front{
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.cube_face_right{
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+.cube_face_back{
+    transform: rotateY(120deg) translateZ(25px);
+}
+
+.cube_face_left{
+    transform: rotateY(-90deg) translateZ(25px);
+}
+
+.cube_face_top{
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+.cube_face_buttom{
+    transform: rotateY(-90deg) translateZ(25px);
+}
+
+.letter{
+    font-size: 24px;
+    z-index: 4;
+    color: red;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 11px;
+}
+
+#progress1-p{
+    position: absolute;
+    top: 550px;
+    left: 100px;
+}
+
+#progress1-p span{
+    font-size: 30px;
+    color: coral;
+}
+
+@media screen and (max-width:792px) {
+    .container{
+        height: 200px;
+        width: 250px;
+    }
+
+    .containerBar5, .containerBar6, .containerBar7{
+        display: none;
+    }
+
+    .base{
+        width: 250px;
+    }
+
+    .tireContainer2{
+       left: 200px;
+    }
+
+    .tireContainer1{
+        display: none;
+    }
+
+    .front{
+        right: 200px;
+    }
+
+    .truck{
+        left: 50px;
+    }
+
+    .scene{
+        display: none;
+    }
+
+    .roller{
+        display: none;
+    }
+
+    @keyframes truck {
+        0%{
+            left: -200px;
+        }
+    
+        10%{
+            left: 50px;
+        }
+    
+        95%{
+            left: 50px;
+        }
+    
+        100%{
+            left: 2000px;
+        }
+    }
+}
+
+/* Header Section */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+nav{
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: rgb(0, 0, 0);
+    width: 90%;
+    margin: auto;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+}
+
+.logo{
+    flex: 1;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+ nav ul li{
+    word-spacing: 5px;
+}
+
+nav ul li span{
+    word-spacing: -2px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    opacity: 0.4;
+}
+
+
+/* Greetings Section */
+
+.greetings{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.greetings p{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.road{
+    position: relative;
+    width: 700px;
+    height: 150px;
+    background: black;
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.road::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #fff, #fff 50%, transparent 50%,  transparent  100%);
+    background-size: 50px;
+    animation: animate_road 0.125s linear infinite;
+}
+
+@keyframes animate_road {
+    0%{
+        background-position: 50px 0;
+    }
+
+    100%{
+        background-position: 0 0;
+    }
+
+}
+
+.taxi{
+    position: absolute;
+    width: 200px;
+    left: 50px;
+    height: 80px;
+    background: #f4b603;
+    border-radius: 10px;
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.25);
+    perspective: 800px;
+    transform-style: preserve-3d;
+    animation: animate_taxi 2s linear infinite;
+}
+
+@keyframes animate_taxi {
+    0%{
+        transform: translateX(20px) translateY(-20px);
+    }
+    
+    25%{
+        transform: translateX(-10px) translateY(0px);
+    }
+
+    50%{
+        transform: translateX(20px) translateY(20px);
+    }
+
+    75%{
+        transform: translateX(-10px) translateY(0px);
+    }
+
+    100%{
+        transform: translateX(20px) translateY(-20px);
+    }
+}
+
+
+.taxi::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    width: 5px;
+    height: 15px;
+    border-radius: 2px;
+    background: #fc3c25;
+    box-shadow: 0 42px #fc3c25;
+}
+
+.taxi::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    width: 6px;
+    height: 16px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 44px #fff;
+}
+
+.taxi span{
+    position: absolute;
+    inset: 5px 10px;
+    background: #fdd206;
+    border-radius: 10px;
+}
+
+.taxi span::before{
+    content: 'Taxi';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background: #fff;
+    padding: 2px;
+    font-size: 0.75em;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #0005;
+    z-index: 10;
+}
+
+@media screen and (max-width:810px) {
+    .road{
+        width: 150px;
+        height: 500px;
+    }
+
+    .road::before{
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(90deg, #fff, #fff 50%, transparent 50%,  transparent  100%);
+    }
+
+    .taxi{
+        width: 80px;
+        left: 50px;
+        height: 200px;
+    }
+
+    @keyframes animate_road {
+        from{
+            background-position: 0;
+        }
+        to{
+            background-position: 0;
+        }
+    }
+}
+
+/* Scroll down Section */
+
+.scroll-down{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scroll-down p{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.scroll-down p:last-child{
+    animation-name: scroll-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scroll-down {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(40px);
+        opacity: 0.3;
+    }
+}
+
+.jumping p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(40px);
+        opacity: 0.3;
+    }
+}
+
+/* Introduction Section */
+
+.introduction{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 50px;
+}
+
+.intro-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background: black;
+    background: black;
+    box-shadow: 20px 20px 60px #0000, -20px -20px 60px #0000;
+}
+
+.intro-div p img{
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+}
+
+.intro-div > p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.intro-div p span{
+    color: rgb(218, 218, 25);
+}
+
+.intro-div p:last-child{
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    background: coral;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    font-size: 18px;
+}
+
+.intro-div p a{
+    color: white;
+    text-decoration: none;
+}
+
+.intro-div p:last-child:hover{
+    background: inherit;
+    border: 1px solid coral;
+}
+
+.aim{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    background: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.aim h2, .aim ul li{
+    padding: 10px;
+}
+
+.aim h2{
+    font-size: 30px;
+    display: flex;
+}
+
+.aim li{
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+}
+
+.aim p{
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    background: blueviolet;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+.aim p a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.aim p:hover{
+    background: inherit;
+    border: 1px solid blueviolet;
+}
+
+/* Technologies section */
+
+.tech{
+    margin-top: 250px;
+}
+
+.technologies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.tech h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+
+.technologies img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.technologies p{
+    font-size: 20px;
+    color: white;
+}
+
+.technologies > div{
+    margin: 20px;
+}
+
+.technologies progress{
+    font-size: 16px;
+    width: 100px;
+}
+
+.technologies1 p progress{
+    accent-color: yellow;
+}
+
+.technologies2 p progress{
+    accent-color: white;
+}
+
+.technologies3 p progress{
+    accent-color: rgb(211, 211, 52);
+}
+
+.technologies4 p progress{
+    accent-color: pink;
+}
+
+.technologies6 p progress{
+    accent-color: rgb(36, 36, 131);
+}
+
+.technologies7 p progress{
+    accent-color: rgb(177, 27, 177);
+}
+
+@media  screen and (max-width:1066px) {
+    .jumping p img{
+        width: 700px;
+    }
+}
+
+@media  screen and (max-width:740px) {
+    .jumping p img{
+        width: 500px;
+    }
+}
+
+@media  screen and (max-width:563px) {
+    .jumping p img{
+        width: 300px;
+    }
+
+    .greetings p{
+        font-size: 25px;
+    }
+
+    .tech h1{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width:570px){
+    .intro-div, .aim{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:581px){
+    nav{
+        background: none;
+    }
+   
+    nav ul{
+        position: fixed;
+        bottom: 0;
+        z-index: 30;
+        background: black;
+        width: 100%;
+    }
+
+    nav ul li{
+        padding: 20px;
+    }
+
+    header{
+        position: static;
+    }
+
+}
+
+@media screen and (max-width:510px){
+    .nav-link{
+        font-size: 17px;
+    }
+}
+
+.wrapper{
+    position: relative;
+}
+
+.wrapper:is(.btn, .link){
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #151515;
+    background-color: #fff;
+}
+
+.btn{
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: outline .25s;
+}
+
+.active .btn, .btn:hover{
+    outline: 5px solid #bb93fc;
+    outline-offset: -4px;
+}
+
+.item{
+    position: absolute;
+    list-style: none;
+    transition: transform .5s;
+    transition-delay: var(--d);
+}
+
+.wrapper.active .item:nth-child(1){
+    transform: translateX(-65px);
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    margin-top: 200px;
+}
+
+.footer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 100px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+    width: 100%;
+}
+
+@media screen and (max-width:675px) {
+    .footer-p{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .footer-p:last-child{
+        padding-top: 80px;
+    }
+}
