@@ -403,6 +403,8 @@ body{
     position: absolute;
     top: 550px;
     left: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 #progress1-p span{
